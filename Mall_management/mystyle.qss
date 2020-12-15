@@ -1,0 +1,73 @@
+QMainWindow {
+color: #ffffff;
+}
+
+QPushButton{
+color: 	#F8F8FF;
+/*border:2px solid #8f8f91;*/
+ border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    border-radius: 20px;
+border-radius:6px;
+background-color:QLinearGradient(x1:0,y1:0,x2:0,y2:1,stop:0 #000000,stop:1 #000000);
+font-size:12px;
+padding-left:5px;
+padding-right:5px;
+padding:3px;
+}
+QPushButton::hover{/*当鼠标经过控件上方时,控件要发生的变化*/
+  border-color: #FF0000;               /*外边框的颜色*/
+}
+
+QPushButton:pressed{
+background-color:QLinearGradient(x1:0,y1:0,x2:0,y2:1,stop:0 #2d2d2d,stop:1 #252525);
+}
+
+QWidget::item:hover
+{
+ color: #000000;
+ background-color:QLinearGradient(x1:0,y1:0,x2:0,y2:1,stop:0 #ffa02f,stop:1 #ca0619);
+
+}
+
+/*QPushButton {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #BDC8E2;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: left center;
+    padding-left: 25px;
+    padding-top: 0px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    border-radius: 20px;
+
+    background-color: #2E3648;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+*/
+
+QLabel {
+     color: #000000;
+}
+
+QLineEdit,QTextEdit {/*控件初始化的设置*/
+    border: 1px solid #32435E;
+    border-radius: 5px;                /*控件边框的弧度，数值越大，则弯曲得越厉害*/
+    /* padding: 0 8px; */
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,    /*背景*/
+                                 stop: 0 	#1E90FF,
+                                 stop: 1.0 	#F0F8FF);
+    selection-background-color: #0A246A;
+
+
+}
+QLineEdit::hover{/*当鼠标经过控件上方时,控件要发生的变化*/
+  border-color: aqua;               /*外边框的颜色*/
+}
